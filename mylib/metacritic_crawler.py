@@ -11,8 +11,8 @@ def crawl_game_reviews(game_url, driver_path="./chromedriver.exe", num_pages=3):
     options.add_argument('--disable-gpu')
     options.add_argument('--no-sandbox')
     options.add_argument('--lang=en-US')
-    options.add_argument("user-agent=Mozilla/5.0")
-    options.add_argument('--headless')  # 필요 시 사용
+    options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36")
+    #options.add_argument('--headless')  # 필요 시 사용
 
     service = Service(driver_path)
     driver = webdriver.Chrome(service=service, options=options)

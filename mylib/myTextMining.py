@@ -1,3 +1,4 @@
+#mylib\myTextMining.py
 from collections import Counter
 
 def load_corpus_from_csv(corpus_file, col_name):
